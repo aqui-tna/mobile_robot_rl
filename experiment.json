@@ -1,0 +1,97 @@
+{
+  "name": "Souphis/mobile_robot_rl",
+  "url": "https://github.com/aqui-tna/mobile_robot_rl",
+  "python_version": "3",
+  "requirements": {
+    "req_file": "requirements.txt",
+    "pip": [
+    ]
+  },
+  "to_run": {
+      "decision": false,
+      "reason": "RuntimeWarning: Pillow 7.2.0 does not support Python 3.9 and does not provide prebuilt Windows binaries. We do not recommend building from source on Windows."
+  },
+  "entries": [
+      {
+        "cmd": "python main.py --train",
+        "main": "main.py",
+        "steps": [
+            "data-preparation or training or testing or data-preprocessing or anything else"
+        ],
+        "args_lib": "unknown",
+        "args": [],
+        "ins": [
+            {
+            "type": "",
+            "location": "",
+            "artifact": "",
+            "ex_from": "",
+            "ex_in_repo": true
+            }
+        ],
+        "outs": [
+            {
+                "type": "",
+                "location": "",
+                "artifact": "",
+                "ex_from": "",
+                "ex_in_repo": true
+            }
+        ]
+        }
+    ],
+  "ex_metrics": {
+    "metrics_files": [
+        {
+            "file_name": "",
+            "metrics": []
+        }
+    ],
+    "prints": [""],
+    "plots": [""],
+    "others": [
+        {
+            "name": "run_env",
+            "in_repo": "true",
+            "metrics": [        
+              "batch_size",
+              "pi_lrate",
+              "qv_lrate",
+              "alpha_lrate"
+            ]
+        }
+    ]
+  },
+  "ex_hyperparams": {
+    "from_cmd": [""],
+    "config_files": [
+        {
+            "name": "",
+            "in_repo": "false",
+            "hyperparams": [""]
+        }
+    ],
+    "in_code": [
+      "discount_factor",
+      "memory_capacity",
+      "batch_size",
+      "warm_up_steps",
+      "update_steps",
+      "use_soft_update",
+      "target_update_frequency",
+      "pi_lrate",
+      "qv_lrate",
+      "alpha_lrate",
+      "n_step",
+      "polyak_factor",
+      "pi_grad_norm_value",
+      "qv_grad_norm_value"
+    ],
+    "others": [
+        {
+            "name": "none",
+            "metrics": "none"
+        }
+    ]
+  }
+}

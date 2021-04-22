@@ -2,3 +2,8 @@ output/
 __pycache__/
 *.pyc
 .idea/
+*.dll
+init.sh
+*nonadmin
+history
+settings.json
